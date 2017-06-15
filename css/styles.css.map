@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EC2CD,MAAM,EAPG,KAAc;EAavB,KAAK,EAhBE,KAAM;ED/Bf,gBAAgB,EAAE,IAAI",
+"sources": ["../scss/layouts/_footer.scss","../scss/library/bourbon/addons/_size.scss"],
+"names": [],
+"file": "styles.css"
+}

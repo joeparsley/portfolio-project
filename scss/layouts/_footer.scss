@@ -1,0 +1,4 @@
+.box {
+  @include size(200px 200px);
+  background-color: pink;
+}
