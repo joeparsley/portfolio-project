@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,IAAK;EC2CD,MAAM,EAPG,KAAc;EAavB,KAAK,EAhBE,KAAM;ED/Bf,gBAAgB,EAAE,IAAI",
-"sources": ["../scss/layouts/_footer.scss","../scss/library/bourbon/addons/_size.scss"],
+"mappings": "AAAA,CAAE;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGZ;;QAES;EACL,kBAAkB,EAAE,UAAU;EAC3B,eAAe,EAAE,UAAU;EACtB,UAAU,EAAE,UAAU;;AAGlC,UAAW;EACT,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,SAAS",
+"sources": ["../scss/base/_reset.scss"],
 "names": [],
 "file": "styles.css"
 }
