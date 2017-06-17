@@ -1,11 +1,17 @@
 .brand {
-  @include size(200px 100%);
+  @include size(400px 100%);
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
 
   h1{
     color: white;
+    letter-spacing: 2px;
+    margin-right: 150px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 36px;
+
   }
 
 
@@ -13,6 +19,7 @@
 
 
 .nav-bar {
+  order: 3;
   @include size(400px 100%);
 
   ul {
@@ -24,14 +31,18 @@
 
 
     li{
-      padding: 20px;
+      padding: 36.5px 36.5px;
       list-style: none;
       display: inline-block;
+      transition: background $nav-button-transition, border-left $nav-button-transition, border-right $nav-button-transition;
+      cursor: pointer;
 
 
       &:hover {
-        border: 2px solid white;
-        border-radius: $box-border-radius;
+        border-left:2px solid #666;
+        border-right:2px solid #666;
+        background: rgba(0, 0, 0, .6);
+
       }
 
 
@@ -39,6 +50,7 @@
         color: white;
         text-shadow: 1px 1px 2px black;
         text-decoration: none;
+        font-size: 20px;
       }
     }
   }

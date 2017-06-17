@@ -1,3 +1,63 @@
+/* Pulse Shrink */
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent; }
+
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; }
+
+/* Push */
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent; }
+
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -17,37 +77,30 @@ header {
   height: 500px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   font-family: "Fjalla One", sans-serif;
   background-image: url("../img/hero2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: bottom; }
   header .header-container {
-    margin-top: 10px;
     height: 100px;
-    width: 80%;
-    border-radius: 5px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: black;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 5px; }
-
-.hero {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .hero .hero-container {
-    height: 100%;
-    width: 100%;
-    border: 2px solid red; }
+    background: rgba(0, 0, 0, 0.3); }
+  header .hero-text {
+    align-self: center;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    margin-bottom: 200px;
+    text-shadow: 1px 1px 2px black; }
 
 .projects {
-  height: 700px;
+  height: 1000px;
   width: 100%;
   background-color: #666;
   border: 2px solid lime;
@@ -55,7 +108,7 @@ header {
   justify-content: center;
   align-items: center; }
   .projects .projects-container {
-    height: 600px;
+    height: 900px;
     width: 95%;
     border: 2px solid yellow; }
 
@@ -80,14 +133,20 @@ footer {
 
 .brand {
   height: 100%;
-  width: 200px;
+  width: 400px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  order: 1; }
   .brand h1 {
-    color: white; }
+    color: white;
+    letter-spacing: 2px;
+    margin-right: 150px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 36px; }
 
 .nav-bar {
+  order: 3;
   height: 100%;
   width: 400px; }
   .nav-bar ul {
@@ -97,15 +156,19 @@ footer {
     justify-content: space-around;
     align-items: center; }
     .nav-bar ul li {
-      padding: 20px;
+      padding: 36.5px 36.5px;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      transition: background 700ms, border-left 700ms, border-right 700ms;
+      cursor: pointer; }
       .nav-bar ul li:hover {
-        border: 2px solid white;
-        border-radius: 5px; }
+        border-left: 2px solid #666;
+        border-right: 2px solid #666;
+        background: rgba(0, 0, 0, 0.6); }
       .nav-bar ul li a {
         color: white;
         text-shadow: 1px 1px 2px black;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

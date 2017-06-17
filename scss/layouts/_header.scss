@@ -2,26 +2,34 @@ header {
   @include size(100% 500px);
 
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   font-family: $title-font;
   background-image: url('../img/hero2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 
 
   .header-container {
-    margin-top: 10px;
-    @include size(80% 100px);
-    border-radius: $box-border-radius;
+    // margin-top: 10px;
+    @include size(100% 100px);
+    // border-radius: $box-border-radius;
     display: flex;
     justify-content: space-between;
     background-color: black;
     background: rgba(0, 0, 0, 0.3);
-    border-radius: $box-border-radius;
 
 
 
+  }
+
+  .hero-text {
+    align-self: center;
+    font-family: $title-font;
+    color: white;
+    margin-bottom: 200px;
+    text-shadow: 1px 1px 2px black;
   }
 }

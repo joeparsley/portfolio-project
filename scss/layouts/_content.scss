@@ -1,18 +1,7 @@
-.hero {
-  @include size(100% 500px);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .hero-container {
-    @include size(100% 100%);
-    border: 2px solid red;
-  }
-}
 
 .projects {
-  @include size(100% 700px);
+  @include size(100% 1000px);
   background-color: #666;
   border: 2px solid lime;
   display: flex;
@@ -20,7 +9,7 @@
   align-items: center;
 
   .projects-container {
-    @include size(95% 600px);
+    @include size(95% 900px);
     border: 2px solid yellow;
   }
 }
