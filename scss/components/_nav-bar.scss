@@ -1,0 +1,45 @@
+.brand {
+  @include size(200px 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    color: white;
+  }
+
+
+}
+
+
+.nav-bar {
+  @include size(400px 100%);
+
+  ul {
+    @include size(100%);
+    // border: 2px solid lime;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    li{
+      padding: 20px;
+      list-style: none;
+      display: inline-block;
+
+
+      &:hover {
+        border: 2px solid white;
+        border-radius: $box-border-radius;
+      }
+
+
+      a {
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        text-decoration: none;
+      }
+    }
+  }
+}

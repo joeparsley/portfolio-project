@@ -1,12 +1,27 @@
 header {
-  @include size(100% 100px);
-  background-color: yellow;
+  @include size(100% 500px);
+
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  font-family: $title-font;
+  background-image: url('../img/hero2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 
   .header-container {
-    @include size(80% 80px);
-    border: 2px solid orange;
+    margin-top: 10px;
+    @include size(80% 100px);
+    border-radius: $box-border-radius;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: $box-border-radius;
+
+
+
   }
 }
