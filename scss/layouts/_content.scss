@@ -9,8 +9,31 @@
   align-items: center;
 
   .projects-container {
-    @include size(95% 900px);
+    @include size(95% 950px);
     border: 2px solid yellow;
+    @include grid-container;
+
+    .project-1 {
+      height: $grid-box-height;
+      @include grid-column(6);
+      border: 2px solid black;
+      // margin-top: 20px;
+    }
+    .project-2 {
+      height: $grid-box-height;
+      @include grid-column(6);
+      border: 2px solid black;
+    }
+    .project-3 {
+      height: $grid-box-height;
+      @include grid-column(6);
+      border: 2px solid black;
+    }
+    .project-4 {
+      height: $grid-box-height;
+      @include grid-column(6);
+      border: 2px solid black;
+    }
   }
 }
 

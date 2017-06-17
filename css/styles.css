@@ -1,63 +1,3 @@
-/* Pulse Shrink */
-@-webkit-keyframes hvr-pulse-shrink {
-  to {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9); } }
-@keyframes hvr-pulse-shrink {
-  to {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9); } }
-.hvr-pulse-shrink {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent; }
-
-.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
-  -webkit-animation-name: hvr-pulse-shrink;
-  animation-name: hvr-pulse-shrink;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate; }
-
-/* Push */
-@-webkit-keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8); }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-@keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8); }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-.hvr-push {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent; }
-
-.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
-  -webkit-animation-name: hvr-push;
-  animation-name: hvr-push;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -108,9 +48,37 @@ header {
   justify-content: center;
   align-items: center; }
   .projects .projects-container {
-    height: 900px;
+    height: 950px;
     width: 95%;
     border: 2px solid yellow; }
+    .projects .projects-container::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .projects .projects-container .project-1 {
+      height: 474px;
+      width: calc(50%);
+      float: left;
+      margin-left: 0px;
+      border: 2px solid black; }
+    .projects .projects-container .project-2 {
+      height: 474px;
+      width: calc(50%);
+      float: left;
+      margin-left: 0px;
+      border: 2px solid black; }
+    .projects .projects-container .project-3 {
+      height: 474px;
+      width: calc(50%);
+      float: left;
+      margin-left: 0px;
+      border: 2px solid black; }
+    .projects .projects-container .project-4 {
+      height: 474px;
+      width: calc(50%);
+      float: left;
+      margin-left: 0px;
+      border: 2px solid black; }
 
 .about-me {
   height: 700px;
