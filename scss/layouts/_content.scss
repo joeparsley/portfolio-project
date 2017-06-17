@@ -1,0 +1,41 @@
+.hero {
+  @include size(100% 500px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-container {
+    @include size(100% 100%);
+    background-color: lightpink;
+    border: 2px solid red;
+  }
+}
+
+.projects {
+  @include size(100% 700px);
+  background-color: #666;
+  border: 2px solid lime;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .projects-container {
+    @include size(95% 600px);
+    border: 2px solid yellow;
+  }
+}
+
+.about-me {
+  @include size(100% 700px);
+  background-color: #lightgray;
+  border: 2px solid lime;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-me-container {
+    @include size(95% 600px);
+    border: 2px solid yellow;
+  }
+}

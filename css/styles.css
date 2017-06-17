@@ -13,4 +13,60 @@ html, body {
   height: 100%;
   background-color: lightgray; }
 
+header {
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .header-container {
+    height: 80px;
+    width: 80%;
+    border: 2px solid orange; }
+
+.hero {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero .hero-container {
+    height: 100%;
+    width: 100%;
+    background-color: lightpink;
+    border: 2px solid red; }
+
+.projects {
+  height: 700px;
+  width: 100%;
+  background-color: #666;
+  border: 2px solid lime;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .projects .projects-container {
+    height: 600px;
+    width: 95%;
+    border: 2px solid yellow; }
+
+.about-me {
+  height: 700px;
+  width: 100%;
+  background-color: #lightgray;
+  border: 2px solid lime;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about-me .about-me-container {
+    height: 600px;
+    width: 95%;
+    border: 2px solid yellow; }
+
+footer {
+  height: 100px;
+  width: 100%;
+  border: 2px solid red;
+  background-color: #666; }
+
 /*# sourceMappingURL=styles.css.map */

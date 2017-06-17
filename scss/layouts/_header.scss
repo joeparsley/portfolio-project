@@ -1,0 +1,12 @@
+header {
+  @include size(100% 100px);
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-container {
+    @include size(80% 80px);
+    border: 2px solid orange;
+  }
+}
