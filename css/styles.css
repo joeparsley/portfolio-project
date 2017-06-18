@@ -42,15 +42,15 @@ header {
 .projects {
   height: 1000px;
   width: 100%;
-  background-color: #666;
-  border: 2px solid lime;
+  background-color: #B0D1DD;
+  border: 2px solid orange;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-family: "Droid Sans", sans-serif; }
   .projects .projects-container {
     height: 950px;
-    width: 95%;
-    border: 2px solid yellow; }
+    width: 95%; }
     .projects .projects-container::after {
       clear: both;
       content: "";
@@ -83,7 +83,7 @@ header {
 .about-me {
   height: 700px;
   width: 100%;
-  background-color: #lightgray;
+  background-color: #7D9587;
   border: 2px solid lime;
   display: flex;
   justify-content: center;
@@ -301,5 +301,32 @@ nav a {
   text-shadow: 2px 2px 4px black;
   text-decoration: none;
   font-size: 36px; }
+
+.project-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .project-1 .card {
+    height: 400px;
+    flex-basis: 35em;
+    border: 4px solid #1B1815;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #838790;
+    box-shadow: 6px 6px 8px #666; }
+    .project-1 .card .card-image {
+      height: 250px;
+      width: 100%;
+      background-image: url("../img/project1.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .project-1 .card .card-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; }
+    .project-1 .card .card-info {
+      margin-top: 20px;
+      text-align: left;
+      color: white; }
 
 /*# sourceMappingURL=styles.css.map */

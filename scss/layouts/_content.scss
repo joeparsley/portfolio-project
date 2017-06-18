@@ -2,15 +2,15 @@
 
 .projects {
   @include size(100% 1000px);
-  background-color: #666;
-  border: 2px solid lime;
+  background-color: #B0D1DD;
+  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: $body-font;
 
   .projects-container {
     @include size(95% 950px);
-    border: 2px solid yellow;
     @include grid-container;
 
     .project-1 {
@@ -39,7 +39,7 @@
 
 .about-me {
   @include size(100% 700px);
-  background-color: #lightgray;
+  background-color: #7D9587;
   border: 2px solid lime;
   display: flex;
   justify-content: center;
