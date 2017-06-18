@@ -40,21 +40,31 @@ header {
     text-shadow: 1px 1px 2px black; }
 
 .projects {
-  height: 1000px;
+  height: 1200px;
   width: 100%;
   background-color: #B0D1DD;
   border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Droid Sans", sans-serif; }
+  font-family: "Droid Sans", sans-serif;
+  overflow: hidden; }
   .projects .projects-container {
-    height: 950px;
+    height: 1000px;
     width: 95%; }
     .projects .projects-container::after {
       clear: both;
       content: "";
       display: block; }
+    .projects .projects-container .project-header {
+      width: calc(100%);
+      float: left;
+      margin-left: 0px;
+      text-align: center; }
+      .projects .projects-container .project-header h1 {
+        font-size: 48px;
+        color: white;
+        text-shadow: 1px 1px 2px black; }
     .projects .projects-container .project-1 {
       height: 474px;
       width: calc(50%);
@@ -79,6 +89,13 @@ header {
       float: left;
       margin-left: 0px;
       border: 2px solid black; }
+    @media screen and (max-width: 875px) {
+      .projects .projects-container .projects-container {
+        align-items: flex-start; }
+      .projects .projects-container .project-1, .projects .projects-container .project-2, .projects .projects-container .project-3, .projects .projects-container .project-4 {
+        width: calc(100%);
+        float: left;
+        margin-left: 0px; } }
 
 .about-me {
   height: 700px;
@@ -302,31 +319,39 @@ nav a {
   text-decoration: none;
   font-size: 36px; }
 
-.project-1 {
+.project-1, .project-2, .project-3, .project-4 {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .project-1 .card {
+  .project-1 .card, .project-2 .card, .project-3 .card, .project-4 .card {
     height: 400px;
-    flex-basis: 35em;
+    flex-basis: 40em;
     border: 4px solid #1B1815;
     border-radius: 5px;
     padding: 10px;
     background-color: #838790;
     box-shadow: 6px 6px 8px #666; }
-    .project-1 .card .card-image {
+    .project-1 .card .card-image, .project-2 .card .card-image, .project-3 .card .card-image, .project-4 .card .card-image {
       height: 250px;
       width: 100%;
       background-image: url("../img/project1.png");
       background-repeat: no-repeat;
       background-size: cover; }
-    .project-1 .card .card-header {
+    .project-1 .card .card-header, .project-2 .card .card-header, .project-3 .card .card-header, .project-4 .card .card-header {
       display: flex;
       justify-content: center;
       margin-top: 20px; }
-    .project-1 .card .card-info {
+      .project-1 .card .card-header a, .project-2 .card .card-header a, .project-3 .card .card-header a, .project-4 .card .card-header a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 2px black; }
+        .project-1 .card .card-header a:hover, .project-2 .card .card-header a:hover, .project-3 .card .card-header a:hover, .project-4 .card .card-header a:hover {
+          padding-bottom: 3px;
+          border-bottom: 2px solid white; }
+    .project-1 .card .card-info, .project-2 .card .card-info, .project-3 .card .card-info, .project-4 .card .card-info {
       margin-top: 20px;
       text-align: left;
-      color: white; }
+      color: white;
+      text-shadow: 1px 1px 1px black; }
 
 /*# sourceMappingURL=styles.css.map */

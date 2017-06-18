@@ -1,17 +1,32 @@
 
 
 .projects {
-  @include size(100% 1000px);
+  @include size(100% 1200px);
   background-color: #B0D1DD;
   border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $body-font;
+  overflow: hidden;
 
   .projects-container {
-    @include size(95% 950px);
+    @include size(95% 1000px);
     @include grid-container;
+
+    .project-header {
+      @include grid-column(12);
+
+      text-align: center;
+      // margin-bottom: 20px;
+
+      h1 {
+        font-size: 48px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+      }
+
+    }
 
     .project-1 {
       height: $grid-box-height;
@@ -34,8 +49,23 @@
       @include grid-column(6);
       border: 2px solid black;
     }
+
+
+    // TABLET BREAK
+    @include large-tablet-breakpoint {
+
+      .projects-container {
+        align-items: flex-start;
+      }
+      .project-1, .project-2, .project-3, .project-4 {
+        @include grid-column(12);
+      }
+    }
   }
 }
+
+
+
 
 .about-me {
   @include size(100% 700px);

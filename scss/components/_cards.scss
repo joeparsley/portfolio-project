@@ -1,20 +1,16 @@
 
-.project-1 {
+.project-1, .project-2, .project-3, .project-4 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
-
   .card {
     height: 400px;
-    flex-basis: 35em;
+    flex-basis: 40em;
     border: 4px solid $ragoon-green;
     border-radius: $box-border-radius;
     padding:10px;
     background-color: $card-background-color;
-    box-shadow: 6px 6px 8px #666;  
+    box-shadow: 6px 6px 8px #666;
 
     .card-image {
       @include size(100% 250px);
@@ -28,12 +24,28 @@
       justify-content: center;
       margin-top: 20px;
 
-    }
+      a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 2px black;
 
+        &:hover {
+          padding-bottom: 3px;
+          border-bottom: 2px solid white;
+        }
+      }
+    }
     .card-info {
       margin-top: 20px;
       text-align: left;
       color: white;
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+
+  @include large-tablet-breakpoint {
+    .card  {
+
     }
   }
 
