@@ -6,7 +6,7 @@
   .card {
     height: 400px;
     flex-basis: 40em;
-    border: 4px solid $ragoon-green;
+    border: 2px solid $ragoon-green;
     border-radius: $box-border-radius;
     padding:10px;
     background-color: $card-background-color;
@@ -44,8 +44,50 @@
   }
 
   @include large-tablet-breakpoint {
-    .card  {
+    .card {
+      height: 200px;
+      flex-basis: 35em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
 
+      .card-image {
+        @include size(100% 175px);
+        background-image: url('../img/project1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid red;
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        position: absolute;
+        top: 30%;
+        left: 37%;
+
+
+        a {
+          text-decoration: none;
+          color: white;
+          text-shadow: 1px 1px 2px black;
+
+
+          &:hover {
+            padding-bottom: 3px;
+            border-bottom: 2px solid white;
+          }
+        }
+      }
+      .card-info {
+        margin-top: 0;
+        // text-align: left;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        border: 2px solid red;
+      }
     }
   }
 

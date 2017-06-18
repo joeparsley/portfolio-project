@@ -16,6 +16,7 @@
 
     .project-header {
       @include grid-column(12);
+      border: 2px solid red;
 
       text-align: center;
       // margin-bottom: 20px;
@@ -59,6 +60,7 @@
       }
       .project-1, .project-2, .project-3, .project-4 {
         @include grid-column(12);
+        height: $large-tablet-box-height;
       }
     }
   }
