@@ -21,10 +21,10 @@ header {
   align-items: center;
   flex-direction: column;
   font-family: "Fjalla One", sans-serif;
-  background-image: url("../img/hero2.jpg");
+  background-image: url("../img/hero4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom; }
+  background-position: center; }
   header .header-container {
     height: 100px;
     width: 100%;
@@ -233,5 +233,73 @@ span:nth-child(3) {
     transform: rotate(-440deg); }
   100% {
     transform: rotate(0deg); } }
+.sliding-panel-content {
+  position: fixed;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
+  -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
+  transform: translateX(-220px);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  background-color: #1B1815;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: 999999; }
+  .sliding-panel-content.is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+.sliding-panel-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999; }
+  .sliding-panel-fade-screen.is-visible {
+    opacity: 0.4;
+    visibility: visible; }
+
+.sliding-panel-close {
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: none;
+  font-size: 58px; }
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  nav ul li {
+    list-style: none;
+    margin-top: 60px; }
+    nav ul li:hover {
+      text-decoration: underline; }
+nav a {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: none;
+  font-size: 36px; }
 
 /*# sourceMappingURL=styles.css.map */
