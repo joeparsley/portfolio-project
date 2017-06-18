@@ -14,7 +14,7 @@
 
     .card-image {
       @include size(100% 250px);
-      background-image: url('../img/project1.png');
+      // background-image: url('../img/project1.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -69,8 +69,7 @@
         justify-content: center;
         margin-top: 0;
         position: absolute;
-        top: 25%;
-        left: 37%;
+
 
 
         a {
@@ -97,4 +96,42 @@
   }
 
 
+}
+
+
+.project-1{
+  .card-image {
+    background-image: url('../img/project1.png');
+  }
+  .card-header{
+    top: 35%;
+    left: 37%;
+  }
+}
+.project-2{
+  .card-image {
+    background-image: url('../img/project2.png');
+  }
+  .card-header{
+    top: 35%;
+    left: 37%;
+  }
+}
+.project-3{
+  .card-image {
+    background-image: url('../img/project3.png');
+  }
+  .card-header{
+    top: 40%;
+    left: 40%;
+  }
+}
+.project-4{
+  .card-image {
+    background-image: url('../img/project4.png');
+  }
+  .card-header{
+    top: 35%;
+    left: 37%;
+  }
 }

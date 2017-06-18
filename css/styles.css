@@ -42,7 +42,7 @@ header {
 .projects {
   height: 1200px;
   width: 100%;
-  background-color: #B0D1DD;
+  background-color: #97A0A9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,12 +325,11 @@ nav a {
     border: 2px solid #1B1815;
     border-radius: 5px;
     padding: 10px;
-    background-color: #838790;
+    background-color: #DBE2E7;
     box-shadow: 6px 6px 8px #666; }
     .project-1 .card .card-image, .project-2 .card .card-image, .project-3 .card .card-image, .project-4 .card .card-image {
       height: 250px;
       width: 100%;
-      background-image: url("../img/project1.png");
       background-repeat: no-repeat;
       background-size: cover; }
     .project-1 .card .card-header, .project-2 .card .card-header, .project-3 .card .card-header, .project-4 .card .card-header {
@@ -370,9 +369,7 @@ nav a {
         display: flex;
         justify-content: center;
         margin-top: 0;
-        position: absolute;
-        top: 25%;
-        left: 37%; }
+        position: absolute; }
         .project-1 .card .card-header a, .project-2 .card .card-header a, .project-3 .card .card-header a, .project-4 .card .card-header a {
           text-decoration: none;
           color: white;
@@ -386,5 +383,29 @@ nav a {
         margin-top: 10px;
         color: white;
         text-shadow: 1px 1px 1px black; } }
+
+.project-1 .card-image {
+  background-image: url("../img/project1.png"); }
+.project-1 .card-header {
+  top: 35%;
+  left: 37%; }
+
+.project-2 .card-image {
+  background-image: url("../img/project2.png"); }
+.project-2 .card-header {
+  top: 35%;
+  left: 37%; }
+
+.project-3 .card-image {
+  background-image: url("../img/project3.png"); }
+.project-3 .card-header {
+  top: 40%;
+  left: 40%; }
+
+.project-4 .card-image {
+  background-image: url("../img/project4.png"); }
+.project-4 .card-header {
+  top: 35%;
+  left: 37%; }
 
 /*# sourceMappingURL=styles.css.map */
