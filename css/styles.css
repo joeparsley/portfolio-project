@@ -43,7 +43,6 @@ header {
   height: 1200px;
   width: 100%;
   background-color: #B0D1DD;
-  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +59,6 @@ header {
       width: calc(100%);
       float: left;
       margin-left: 0px;
-      border: 2px solid red;
       text-align: center; }
       .projects .projects-container .project-header h1 {
         font-size: 48px;
@@ -70,26 +68,22 @@ header {
       height: 475px;
       width: calc(50%);
       float: left;
-      margin-left: 0px;
-      border: 2px solid black; }
+      margin-left: 0px; }
     .projects .projects-container .project-2 {
       height: 475px;
       width: calc(50%);
       float: left;
-      margin-left: 0px;
-      border: 2px solid black; }
+      margin-left: 0px; }
     .projects .projects-container .project-3 {
       height: 475px;
       width: calc(50%);
       float: left;
-      margin-left: 0px;
-      border: 2px solid black; }
+      margin-left: 0px; }
     .projects .projects-container .project-4 {
       height: 475px;
       width: calc(50%);
       float: left;
-      margin-left: 0px;
-      border: 2px solid black; }
+      margin-left: 0px; }
     @media screen and (max-width: 875px) {
       .projects .projects-container .projects-container {
         align-items: flex-start; }
@@ -358,24 +352,26 @@ nav a {
   @media screen and (max-width: 875px) {
     .project-1 .card, .project-2 .card, .project-3 .card, .project-4 .card {
       height: 200px;
-      flex-basis: 35em;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
       position: relative; }
       .project-1 .card .card-image, .project-2 .card .card-image, .project-3 .card .card-image, .project-4 .card .card-image {
-        height: 175px;
+        height: 150px;
         width: 100%;
-        background-image: url("../img/project1.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 2px solid red; }
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 300ms linear; }
+        .project-1 .card .card-image:hover, .project-2 .card .card-image:hover, .project-3 .card .card-image:hover, .project-4 .card .card-image:hover {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+          cursor: pointer; }
       .project-1 .card .card-header, .project-2 .card .card-header, .project-3 .card .card-header, .project-4 .card .card-header {
         display: flex;
         justify-content: center;
         margin-top: 0;
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 37%; }
         .project-1 .card .card-header a, .project-2 .card .card-header a, .project-3 .card .card-header a, .project-4 .card .card-header a {
           text-decoration: none;
@@ -383,11 +379,12 @@ nav a {
           text-shadow: 1px 1px 2px black; }
           .project-1 .card .card-header a:hover, .project-2 .card .card-header a:hover, .project-3 .card .card-header a:hover, .project-4 .card .card-header a:hover {
             padding-bottom: 3px;
-            border-bottom: 2px solid white; }
+            border-bottom: 2px solid white;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
       .project-1 .card .card-info, .project-2 .card .card-info, .project-3 .card .card-info, .project-4 .card .card-info {
-        margin-top: 0;
+        margin-top: 10px;
         color: white;
-        text-shadow: 1px 1px 1px black;
-        border: 2px solid red; } }
+        text-shadow: 1px 1px 1px black; } }
 
 /*# sourceMappingURL=styles.css.map */

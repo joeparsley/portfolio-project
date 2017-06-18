@@ -3,7 +3,6 @@
 .projects {
   @include size(100% 1200px);
   background-color: #B0D1DD;
-  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +15,6 @@
 
     .project-header {
       @include grid-column(12);
-      border: 2px solid red;
 
       text-align: center;
       // margin-bottom: 20px;
@@ -32,23 +30,23 @@
     .project-1 {
       height: $grid-box-height;
       @include grid-column(6);
-      border: 2px solid black;
+      // border: 2px solid black;
       // margin-top: 20px;
     }
     .project-2 {
       height: $grid-box-height;
       @include grid-column(6);
-      border: 2px solid black;
+      // border: 2px solid black;
     }
     .project-3 {
       height: $grid-box-height;
       @include grid-column(6);
-      border: 2px solid black;
+      // border: 2px solid black;
     }
     .project-4 {
       height: $grid-box-height;
       @include grid-column(6);
-      border: 2px solid black;
+      // border: 2px solid black;
     }
 
 
