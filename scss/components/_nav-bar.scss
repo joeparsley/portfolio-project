@@ -19,7 +19,7 @@
 
 
 .nav-bar {
-  order: 3;
+  order: 2;
   @include size(400px 100%);
 
   ul {
@@ -53,5 +53,24 @@
         font-size: 20px;
       }
     }
+  }
+}
+
+.burger {
+  display: none;
+  order: 3;
+}
+
+
+
+@include large-tablet-breakpoint {
+  .nav-bar {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    margin-top: 32.5px;
+    margin-right: 35px;
   }
 }

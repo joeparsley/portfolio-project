@@ -13,9 +13,7 @@ header {
 
 
   .header-container {
-    // margin-top: 10px;
     @include size(100% 100px);
-    // border-radius: $box-border-radius;
     display: flex;
     justify-content: space-between;
     background-color: black;

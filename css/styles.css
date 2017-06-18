@@ -114,7 +114,7 @@ footer {
     font-size: 36px; }
 
 .nav-bar {
-  order: 3;
+  order: 2;
   height: 100%;
   width: 400px; }
   .nav-bar ul {
@@ -138,5 +138,100 @@ footer {
         text-shadow: 1px 1px 2px black;
         text-decoration: none;
         font-size: 20px; }
+
+.burger {
+  display: none;
+  order: 3; }
+
+@media screen and (max-width: 875px) {
+  .nav-bar {
+    display: none; }
+
+  .burger {
+    display: inline-block;
+    margin-top: 32.5px;
+    margin-right: 35px; } }
+.burger {
+  width: 50px;
+  height: 35px;
+  position: relative; }
+
+span {
+  display: block;
+  background-color: white;
+  height: 5px;
+  width: 50px;
+  box-shadow: 1px 1px 2px black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: all .75s;
+  transition-delay: .5s; }
+
+span:nth-child(1) {
+  top: 0;
+  transform-origin: 0 2.5px; }
+
+span:nth-child(2) {
+  top: 15px; }
+
+span:nth-child(3) {
+  transform-origin: 0 2.5px;
+  top: 30px; }
+
+.toggle-top {
+  animation: spin-right 1s forwards; }
+
+.toggle-top-reverse {
+  animation: spin-right-reverse 1s forwards; }
+
+.middle {
+  opacity: 0; }
+
+.toggle-bottom {
+  transform-origin: left center;
+  animation: spin-left 1s forwards; }
+
+.toggle-bottom-reverse {
+  transform-origin: left center;
+  animation: spin-left-reverse 1s forwards; }
+
+@keyframes spin-right {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(-35deg); }
+  100% {
+    transform: rotate(405deg);
+    top: -2.5px;
+    left: 7.5px; } }
+@keyframes spin-left {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(35deg); }
+  100% {
+    transform: rotate(-405deg);
+    top: 32.5px;
+    left: 7.5px; } }
+@keyframes spin-right-reverse {
+  0% {
+    transform: rotate(405deg);
+    top: -2.5px;
+    left: 7.5px; }
+  20% {
+    transform: rotate(440deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes spin-left-reverse {
+  0% {
+    transform: rotate(-405deg);
+    top: 32.5px;
+    left: 7.5px; }
+  20% {
+    transform: rotate(-440deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 /*# sourceMappingURL=styles.css.map */

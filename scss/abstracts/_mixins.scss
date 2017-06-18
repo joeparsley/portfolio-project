@@ -1,0 +1,30 @@
+@mixin phone-breakpoint {
+  @media #{$phone-breakpoint} {
+    @content;
+  }
+}
+
+
+@mixin tablet-breakpoint {
+  @media #{$tablet-breakpoint} {
+    @content;
+  }
+}
+
+@mixin large-tablet-breakpoint {
+  @media #{$large-tablet-breakpoint} {
+    @content;
+  }
+}
+
+@mixin desktop-breakpoint {
+  @media #{$desktop-breakpoint} {
+    @content;
+  }
+}
+
+@mixin larg-desktop-breakpoint {
+  @media #{$large-desktop-breakpoint} {
+    @content;
+  }
+}

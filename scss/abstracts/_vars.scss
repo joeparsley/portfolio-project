@@ -9,3 +9,11 @@ $nav-button-transition: 700ms;
 
 // PROJECT GRID
 $grid-box-height: 474px;
+
+
+// BREAKPOINTS
+$phone-breakpoint: 'screen and (max-width: 575px)';
+$tablet-breakpoint: 'screen and (max-width: 768px)';
+$large-tablet-breakpoint: 'screen and (max-width: 875px)';
+$desktop-breakpoint: 'screen and (max-width: 1200px)';
+$large-desktop-breakpoint: 'screen and (max-width: 1400px)';
