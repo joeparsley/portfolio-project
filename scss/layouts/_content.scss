@@ -68,15 +68,23 @@
 
 
 .about-me {
-  @include size(100% 700px);
+  font-family: $body-font;
+  @include size(100% 600px);
   background-color: #7D9587;
-  border: 2px solid lime;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .about-me-container {
     @include size(95% 600px);
-    border: 2px solid yellow;
+  }
+}
+
+.projects-more {
+  @include grid-column(12);
+  text-align: center;
+
+  h1{
+    color: white;
   }
 }
