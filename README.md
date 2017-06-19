@@ -16,7 +16,7 @@
 
 ## Screenshot of Project
 
-<img href="../img/screenshot.pmg" alt="oops"></img>
+<img src="img/screenshot.png" alt="screenshot">
 
 
 ## How to Use
