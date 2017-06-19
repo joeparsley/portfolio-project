@@ -1,60 +1,54 @@
-
-
 .projects {
   @include size(100% 1200px);
   background-color: #97A0A9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: $body-font;
   overflow: hidden;
-
   .projects-container {
     @include size(95% 1000px);
     @include grid-container;
-
     .project-header {
       @include grid-column(12);
-
       text-align: center;
-      // margin-bottom: 20px;
-
       h1 {
         font-size: 48px;
         color: white;
         text-shadow: 1px 1px 2px black;
       }
-
     }
 
     .project-1 {
       height: $grid-box-height;
       @include grid-column(6);
-      // border: 2px solid black;
-      // margin-top: 20px;
     }
     .project-2 {
       height: $grid-box-height;
       @include grid-column(6);
-      // border: 2px solid black;
     }
     .project-3 {
       height: $grid-box-height;
       @include grid-column(6);
-      // border: 2px solid black;
     }
     .project-4 {
       height: $grid-box-height;
       @include grid-column(6);
-      // border: 2px solid black;
     }
 
 
-    // TABLET BREAK
+    /* TABLET BREAK*/
     @include large-tablet-breakpoint {
-
       .projects-container {
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
       }
       .project-1, .project-2, .project-3, .project-4 {
         @include grid-column(12);
@@ -71,9 +65,15 @@
   font-family: $body-font;
   @include size(100% 600px);
   background-color: #7D9587;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   .about-me-container {
     @include size(95% 600px);
@@ -86,5 +86,6 @@
 
   h1{
     color: white;
+    text-shadow: 1px 1px 2px black;
   }
 }
