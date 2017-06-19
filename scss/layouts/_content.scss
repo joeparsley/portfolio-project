@@ -1,6 +1,6 @@
 .projects {
   @include size(100% 1200px);
-  background-color: #97A0A9;
+  background-color: #333334;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@
 .about-me {
   font-family: $body-font;
   @include size(100% 600px);
-  background-color: #7D9587;
+  background-color: #514F50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

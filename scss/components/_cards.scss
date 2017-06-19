@@ -16,8 +16,8 @@
     border-radius: $box-border-radius;
     padding:10px;
     background-color: $card-background-color;
-    -webkit-box-shadow: 6px 6px 8px #666;
-            box-shadow: 6px 6px 8px #666;
+    -webkit-box-shadow: 6px 6px 8px black;
+            box-shadow: 6px 6px 8px black;
     .card-image {
       @include size(100% 250px);
       /* background-image: url('../img/project1.png');*/
