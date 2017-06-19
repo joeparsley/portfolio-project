@@ -1,20 +1,22 @@
-# _PROJECT NAME_
+# _Portfolio Page_
 
 
-#### By **Joe Parsley DATE**
+#### By **Joe Parsley June 2017**
 
 ## Description
 
+ * A CSS week #4 independent project showcasing all of the things we have learned in CSS.
 
 
 ## Setup/Installation Requirements
 
 * Open CMD/Terminal
-* git clone `LINK`
+* git clone `https://github.com/joeparsley/portfolio-project`
 * Open index.html file in a browser such as Google Chrome
 
 ## Screenshot of Project
 
+<img href="../img/screenshot.pmg" alt="oops"></img>
 
 
 ## How to Use
@@ -34,14 +36,17 @@
 **Main Languages used:**
 
 * HTML
-* CSS
+* SCSS
 
 **Other Technologies:**
 
 * Font Awesome
 * Google Fonts
-* Materialize.CSS
 * jQuery
+* Flexbox
+* Bourbon
+* Neat
+
 
 ## License
 
